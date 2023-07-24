@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import bg2 from "../../public/bgm.png";
+import bg2 from "../../public/bgm.jpg";
 import { motion } from "framer-motion";
 
 const image = {
@@ -25,7 +25,7 @@ export default function AnimatedImage() {
       initial="initial"
       animate="animate"
     >
-      <Image src={bg2} className="w-full" />
+      <Image src={bg2} className="w-full" alt="imagem de uma mulher" />
     </motion.div>
   );
 }

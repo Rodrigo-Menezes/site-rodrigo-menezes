@@ -1,9 +1,10 @@
+import NavBar from '@/components/NavBar'
 import './globals.css'
 import { Montserrat, Lobster } from 'next/font/google'
+import Footer from '@/components/Footer'
 
-const montserrat = Montserrat({ subsets: ['latin'], variable:'--font-mont'})
-const lobster = Lobster({ subsets: ['latin'],weight:'400', variable:'--font-lob'})
-
+const montserrat = Montserrat({ subsets: ['latin'], variable: '--font-mont' })
+const lobster = Lobster({ subsets: ['latin'], weight: '400', variable: '--font-lob' })
 
 export const metadata = {
   title: 'Create Next App',
@@ -13,7 +14,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.variable} ${lobster.variable} bg-light w-full min-h-screen`}>{children}</body>
+      <body className={`${montserrat.variable} ${lobster.variable} bg-light w-full min-h-screen`}>
+        <NavBar />
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }

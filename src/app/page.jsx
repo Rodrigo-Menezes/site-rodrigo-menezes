@@ -1,10 +1,8 @@
 import Layout from "@/components/Layout";
-import NavBar from "@/components/NavBar";
 import Image from "next/image";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { User } from "@/components/icons";
-import Footer from "@/components/Footer";
 import HireMe from "@/components/HireMe";
 import ideia from "../../public/ideia.png";
 import AnimatedImage from "@/components/AnimateImage";
@@ -12,13 +10,10 @@ import AnimatedImage from "@/components/AnimateImage";
 export default function Home() {
   return (
     <>
-      <header>
-        <NavBar />
-      </header>
       <main className="flex items-center text-dark w-full min-h-screen">
         <Layout className="pt-0">
           <div className="flex items-center justify-between w-full">
-            <AnimatedImage/>
+            <AnimatedImage />
             <div className="w-1/2 flex flex-col items-center self-center">
               <AnimatedText
                 text="Turning Vision Into Reality With Code And Design."
@@ -55,7 +50,6 @@ export default function Home() {
           />
         </div>
       </main>
-      <Footer />
     </>
   );
 }

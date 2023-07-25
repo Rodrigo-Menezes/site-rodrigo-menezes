@@ -33,7 +33,7 @@ export default function Skills() {
         <Skill name="Figma" x="19vw" y="-5vw" />
         <Skill name="Tailwind CSS" x="-12vw" y="-10vw" />
         <Skill name="Firebase" x="20vw" y="3vw" />
-        <Skill name="Web Desing" x="-20vw" y="3vw" />
+        <Skill name="Web Design" x="-20vw" y="3vw" />
         <Skill name="FramerMotion" x="-19vw" y="-5vw" />
       </div>
     </div>

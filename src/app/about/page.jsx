@@ -6,6 +6,7 @@ import profile from '../../../public/bgm.jpg'
 import { useEffect, useRef } from "react";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -80,6 +81,7 @@ export default function About() {
             </div>
           </div>
           <Skills/>
+          <Experience/>
         </Layout>
       </main>
     </>

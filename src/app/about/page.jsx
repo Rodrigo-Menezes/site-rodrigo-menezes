@@ -5,6 +5,7 @@ import Image from "next/image";
 import profile from '../../../public/bgm.jpg'
 import { useEffect, useRef } from "react";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
+import Skills from "@/components/Skills";
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -51,10 +52,11 @@ export default function About() {
             </div>
             <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark
             bg-light p-8">
-              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" />
+              <div className="absolute top-0 -right-3 -z-10 w-[100%] h-[103%] rounded-3xl bg-dark" />
               <Image src={profile} alt="foto de perfil" className="w-full h-auto rounded-2xl" />
             </div>
-            <div className="col-spam-2 flex flex-col items-end justify-between">
+
+            <div className="col-spam-2 flex flex-col items-end justify-between w-52">
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block text-7xl font-bold">
                   <AnimatedNumbers value={50} />+
@@ -77,6 +79,7 @@ export default function About() {
               </div>
             </div>
           </div>
+          <Skills/>
         </Layout>
       </main>
     </>

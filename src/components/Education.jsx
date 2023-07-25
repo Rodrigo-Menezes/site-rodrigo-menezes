@@ -30,7 +30,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
   )
 }
 
-export default function Experience() {
+export default function Education() {
   const ref = useRef(null)
   const { scrollYProgress } = useScroll(
     {
@@ -43,7 +43,7 @@ export default function Experience() {
     <div>
       <div className="my-64">
         <h2 className="font-bold text-8xl mb-32 w-full text-center">
-          Experience
+          Education
         </h2>
         <div ref={ref} className="w-[75%] mx-auto relative">
 

@@ -8,12 +8,12 @@ import project1 from "../../../public/bgm.jpg"
 
 const FeaturedProject = ({ type, title, sumary, img, link, github }) => {
   return (
-    <article className="w-full flex items-center justify-between relative rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12">
+    <article className="w-full flex items-center justify-between relative rounded-2xl rounded-br-3xl border border-solid border-dark bg-light shadow-2xl p-12">
       <div className="absolute top-0 -right-3 -z-10 w-[100%] h-[103%] rounded-3xl bg-dark" />
       <Link href={link} target="_blank"
         className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
       >
-        <Image src={img} alt={title} className="w-56 h-auto" />
+        <Image src={img} alt={title} className="w-56 h-auto hover:scale-105 transition ease duration-300" />
       </Link>
       <div className="w-1/2 flex flex-col items-start justify-between pl-6">
         <span className="text-primary font-medium text-xl">{type}</span>
@@ -34,22 +34,22 @@ const FeaturedProject = ({ type, title, sumary, img, link, github }) => {
 
 const Project = ({ title, type, img, link, github }) => {
   return (
-    <article className="w-full flex items-center  justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative">
+    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative ">
       <div className="absolute top-0 -right-3 -z-10 w-[100%] h-[103%] rounded-3xl bg-dark" />
       <Link href={link} target="_blank"
-        className="w-full cursor-pointer soverflow-hidden rounded-lg"
+        className="w-full cursor-pointer overflow-hidden rounded-lg"
       >
-        <Image src={img} alt={title} className="w-56 h-auto" />
+        <Image src={img} alt={title} className="w-56 h-auto hover:scale-105 transition ease duration-300" />
       </Link>
-      <div className="w-full flex flex-col items-start justify-between pl-6">
+      <div className="w-full flex flex-col items-start justify-between mt-4">
         <span className="text-primary font-medium text-xl">{type}</span>
         <Link href={link} target="_blank" className="hover:underline underline-offset-2">
-          <h2 className="my-2 w-full text-left text-4xl font-bold">{title}
+          <h2 className="my-2 w-full text-left text-3xl font-bold">{title}
           </h2>
         </Link>
-        <div className="mt-2 flex items-center">
-          <Link href={github} target="_blank" className="w-10 text-dark"><GitHubIcon /></Link>
-          <Link href={link} target="_blank" className="ml-4 rounded-lg text-dark underline p-2 px-6 text-lg ">Visit</Link>
+        <div className="mt-2 flex items-center justify-between w-full">
+          <Link href={link} target="_blank" className="rounded-lg text-dark underline text-lg ">Visit</Link>
+          <Link href={github} target="_blank" className="w-8 text-dark"><GitHubIcon /></Link>
         </div>
       </div>
     </article>

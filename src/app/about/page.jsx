@@ -46,14 +46,14 @@ export default function About() {
           <AnimatedText text="Passion Fuels Purposel!" className="mb-16" />
           <div className="grid grid-cols-8 w-full gap-16">
             <div className="col-span-3 flex flex-col items-start justify-start">
-              <h2 className="mb-4 text-lg font-bold uppercase text-dark">Biography</h2>
-              <p className="font-medium">
+              <h2 className="mb-4 text-lg font-bold uppercase dark:text-light text-dark">Biography</h2>
+              <p className="font-medium dark:text-light text-dark">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint non recusandae, corporis exercitationem amet hic, harum fuga tempora aperiam soluta provident ipsum magni quod, atque eligendi molestias quibusdam rem ducimus?
               </p>
-              <p className="font-medium">
+              <p className="font-medium dark:text-light text-dark">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint non recusandae, corporis exercitationem amet hic, harum fuga tempora aperiam soluta provident ipsum magni quod, atque eligendi molestias quibusdam rem ducimus?
               </p>
-              <p className="font-medium">
+              <p className="font-medium dark:text-light text-dark">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint non recusandae, corporis exercitationem amet hic, harum fuga tempora aperiam soluta provident ipsum magni quod, atque eligendi molestias quibusdam rem ducimus?
               </p>
             </div>
@@ -66,21 +66,21 @@ export default function About() {
 
             <div className="col-spam-2 flex flex-col items-end justify-between w-52">
               <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold">
+                <span className="inline-block text-7xl font-bold dark:text-light text-dark">
                   <AnimatedNumbers value={50} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">satisfied clientes</h2>
               </div>
 
               <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold">
+                <span className="inline-block text-7xl font-bold dark:text-light text-dark">
                   <AnimatedNumbers value={40} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">projects completed</h2>
               </div>
 
               <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold">
+                <span className="inline-block text-7xl font-bold dark:text-light text-dark">
                   <AnimatedNumbers value={4} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">years of experience</h2>

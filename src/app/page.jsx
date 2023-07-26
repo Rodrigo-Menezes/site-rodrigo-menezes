@@ -21,7 +21,7 @@ export default function Home() {
                 targetWord="Vision"
                 targetColor="text-cyan-500 font-lobster"
               />
-              <p className="my-4 text-base font-medium">
+              <p className="my-4 text-base font-medium text-dark dark:text-light">
                 {" "}
                 As a skilled full-stack developer, I am dedicated to turning
                 ideas into innovative web applications. Explore my latest
@@ -31,7 +31,7 @@ export default function Home() {
               <div className="flex items-center self-start mt-2">
                 <Link
                   href="/"
-                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark transition ease duration-300"
+                  className="flex items-center bg-dark dark:bg-light text-light dark:text-dark dark:hover:text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light dark:hover:bg-dark hover:text-dark border border-solid  hover:border-dark dark:hover:border-light transition ease duration-300"
                 >
                   {" "}
                   Contact

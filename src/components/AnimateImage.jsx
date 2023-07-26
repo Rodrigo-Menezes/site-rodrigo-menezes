@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import bg2 from "../../public/bgm.jpg";
+import bg2 from "../../public/bgm.png";
 import { motion } from "framer-motion";
 
 const image = {

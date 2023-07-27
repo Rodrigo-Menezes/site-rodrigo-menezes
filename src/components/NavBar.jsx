@@ -44,7 +44,7 @@ const NavBar = () => {
           whileTap={{ scale: 0.9 }}
           className="w-6 mx-3"
         >
-          <GitHubIcon  className="dark:fill-light"/>
+          <GitHubIcon className="dark:fill-light" />
         </motion.a>
         <motion.a
           href="/"
@@ -66,11 +66,11 @@ const NavBar = () => {
         </motion.a>
 
         <button
-        onClick={()=> setMode(mode ==="light"?"dark":"light")}
-        className="ml-3 flex items-center justify-center rounded-full p-1 dark:bg-light"
+          onClick={() => setMode(mode === "light" ? "dark" : "light")}
+          className="ml-3 flex items-center justify-center rounded-full p-1 bg-dark text-light dark:bg-light dark:text-dark"
         >
           {
-            mode == "dark" ? <SunIcon className={"fill-dark"} />:<MoonIcon className={"fill-dark"}/>
+            mode === "dark" ? <SunIcon className={"fill-dark"} /> : <MoonIcon className={"fill-dark"} />
           }
         </button>
       </nav>

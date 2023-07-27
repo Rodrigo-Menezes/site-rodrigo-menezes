@@ -37,7 +37,7 @@ const MovingImg = ({ title, img, link }) => {
         style={{ x: x, y: y }}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1, transition: { duration: 0.2 } }}
-        ref={imgRef} src={img} alt={title} className="w-96 h-auto hidden absolute rounded-lg z-10"
+        ref={imgRef} src={img} alt={title} className="w-72 h-auto hidden absolute rounded-lg z-10"
         priority
         sizes="(max-width:768px) 100vw,(max-width:1200px)50vw,50vw"
       />

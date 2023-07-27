@@ -2,7 +2,7 @@
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import Image from "next/image";
-import profile from '../../../public/bgm.jpg'
+import profile from '../../../public/bgm.png'
 import { useEffect, useRef } from "react";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/components/Skills";
@@ -57,11 +57,14 @@ export default function About() {
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint non recusandae, corporis exercitationem amet hic, harum fuga tempora aperiam soluta provident ipsum magni quod, atque eligendi molestias quibusdam rem ducimus?
               </p>
             </div>
-            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark
-            bg-light p-8 shadow-2xl border-r-8 border-b-8">
+            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark dark:border-light
+            bg-light dark:bg-dark p-8 shadow-2xl border-r-8 border-b-8">
               
               
-              <Image src={profile} alt="foto de perfil" className="w-full h-auto rounded-2xl" />
+              <Image src={profile} alt="foto de perfil" className="w-full h-auto rounded-2xl"
+              priority
+              sizes="(max-width:768px) 100vw,(max-width:1200px)50vw,33vw"
+              />
             </div>
 
             <div className="col-spam-2 flex flex-col items-end justify-between w-52">

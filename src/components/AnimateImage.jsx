@@ -25,7 +25,10 @@ export default function AnimatedImage() {
       initial="initial"
       animate="animate"
     >
-      <Image src={bg2} className="w-full" alt="imagem de uma mulher" />
+      <Image src={bg2} className="w-full" alt="imagem de uma mulher"
+        priority
+        sizes="(max-width:768px) 100vw,(max-width:1200px)50vw,50vw"
+      />
     </motion.div>
   );
 }

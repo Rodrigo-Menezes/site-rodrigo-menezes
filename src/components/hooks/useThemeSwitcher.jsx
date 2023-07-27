@@ -1,5 +1,9 @@
 "use client"
-{/*import { useEffect, useState } from "react";
+{/*
+
+codigo original que não salva o tema dark
+
+import { useEffect, useState } from "react";
 
 export default function useThemeSwitche() {
 
@@ -51,10 +55,11 @@ export default function useThemeSwitche() {
 
   */}
 
-  import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function useThemeSwitche() {
   const preferDarkQuery = "(prefer-color-scheme: dark)";
+  
   const [mode, setMode] = useState(() => {
     const isClient = typeof window !== "undefined";
     const userPref = isClient ? window.localStorage.getItem("theme") : null;

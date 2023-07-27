@@ -19,7 +19,7 @@ export default function Home() {
                 text="Turning Vision Into Reality With Code And Design."
                 className="!text-6xl !text-left"
                 targetWord="Vision"
-                targetColor="text-cyan-500 font-lobster"
+                targetColor="text-primary dark:text-primaryDark font-lobster"
               />
               <p className="my-4 text-base font-medium text-dark dark:text-light">
                 {" "}

@@ -53,7 +53,7 @@ const NavBar = () => {
           whileTap={{ scale: 0.9 }}
           className="w-6 mx-3"
         >
-          <Twitter name="twitter"/>
+          <Twitter name="twitter" />
         </motion.a>
         <motion.a
           href="/"
@@ -62,11 +62,11 @@ const NavBar = () => {
           whileTap={{ scale: 0.9 }}
           className="w-6 mx-3"
         >
-          <LinkedinIcon  name="LinkedinIcon"/>
+          <LinkedinIcon name="LinkedinIcon" />
         </motion.a>
 
         <button
-        name="mode Dark or Light"
+          aria-label="mode Dark or Light"
           onClick={() => setMode(mode === "light" ? "dark" : "light")}
           className="ml-3 flex items-center justify-center rounded-full p-1 bg-dark text-light dark:bg-light dark:text-dark"
         >

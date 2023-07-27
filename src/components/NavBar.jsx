@@ -44,7 +44,7 @@ const NavBar = () => {
           whileTap={{ scale: 0.9 }}
           className="w-6 mx-3"
         >
-          <GitHubIcon className="dark:fill-light" name='github' />
+          <GitHubIcon className="dark:fill-light" aria-label='github' />
         </motion.a>
         <motion.a
           href="/"
@@ -53,7 +53,7 @@ const NavBar = () => {
           whileTap={{ scale: 0.9 }}
           className="w-6 mx-3"
         >
-          <Twitter name="twitter" />
+          <Twitter aria-label="twitter" />
         </motion.a>
         <motion.a
           href="/"
@@ -62,7 +62,7 @@ const NavBar = () => {
           whileTap={{ scale: 0.9 }}
           className="w-6 mx-3"
         >
-          <LinkedinIcon name="LinkedinIcon" />
+          <LinkedinIcon aria-label="LinkedinIcon" />
         </motion.a>
 
         <button

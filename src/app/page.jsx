@@ -6,10 +6,12 @@ import { User } from "@/components/icons";
 import HireMe from "@/components/HireMe";
 import ideia from "../../public/ideia.png";
 import AnimatedImage from "@/components/AnimateImage";
+import TransitionEffect from "@/components/TransitionEffect";
 
 export default function Home() {
   return (
     <>
+    <TransitionEffect/>
       <main className="flex items-center text-dark w-full min-h-screen">
         <Layout className="pt-0">
           <div className="flex items-center justify-between w-full">

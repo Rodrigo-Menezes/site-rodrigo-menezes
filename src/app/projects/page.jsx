@@ -5,6 +5,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import project1 from "../../../public/bgm.jpg"
+import TransitionEffect from "@/components/TransitionEffect";
 
 const FeaturedProject = ({ type, title, sumary, img, link, github }) => {
   return (
@@ -66,6 +67,7 @@ export default function Projects() {
         <title>RodrigoMenezes| Projects Page</title>
         <meta name="descripition" content="any descripition" />
       </Head>
+      <TransitionEffect/>
       <main className="w-full mb-16 flex flex-col items-center justify-center">
         <Layout className="pt-16">
           <AnimatedText text="Imagination Trumps Knowledge!" className="mb-16" />

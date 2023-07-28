@@ -9,6 +9,7 @@ import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 import Head from "next/head";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -37,10 +38,11 @@ const AnimatedNumbers = ({ value }) => {
 export default function About() {
   return (
     <>
-    <Head>
+      <Head>
         <title>RodrigoMenezes| About Page</title>
         <meta name="descripition" content="any descripition" />
       </Head>
+      <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-16">
           <AnimatedText text="Passion Fuels Purposel!" className="mb-16" />
@@ -59,11 +61,11 @@ export default function About() {
             </div>
             <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark dark:border-light
             bg-light dark:bg-dark p-8 shadow-2xl border-r-8 border-b-8">
-              
-              
+
+
               <Image src={profile} alt="foto de perfil" className="w-full h-auto rounded-2xl"
-              priority
-              sizes="(max-width:768px) 100vw,(max-width:1200px)50vw,33vw"
+                priority
+                sizes="(max-width:768px) 100vw,(max-width:1200px)50vw,33vw"
               />
             </div>
 
@@ -90,9 +92,9 @@ export default function About() {
               </div>
             </div>
           </div>
-          <Skills/>
-          <Experience/>
-          <Education/>
+          <Skills />
+          <Experience />
+          <Education />
         </Layout>
       </main>
     </>
